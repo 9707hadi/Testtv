@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>ارشیا تی‌وی | Arshia TV</title>
+  <meta name="theme-color" content="#0b0f19" />
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="logo">▶</span>
+      <div>
+        <h1>ارشیا تی‌وی</h1>
+        <p>پخش زنده شبکه‌ها</p>
+      </div>
+    </div>
+    <div class="search-wrap">
+      <input id="q" type="search" placeholder="جستجوی شبکه..." autocomplete="off" />
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="player-panel">
+      <div class="video-box">
+        <video id="video" controls playsinline></video>
+        <div id="overlay" class="overlay">یک شبکه انتخاب کنید</div>
+      </div>
+      <div class="now">
+        <div>
+          <div id="nowName" class="now-name">—</div>
+          <div id="nowCat" class="now-cat"></div>
+        </div>
+        <div id="serverBar" class="servers"></div>
+      </div>
+      <p class="hint">اگر پخش نشد، سرور ۲ یا ۳ را بزن. بعضی لینک‌ها فقط با Referer داخل اپ کار می‌کنند.</p>
+    </section>
+
+    <aside class="list-panel">
+      <div id="cats" class="cats"></div>
+      <div id="list" class="list"></div>
+      <div class="foot" id="count"></div>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
